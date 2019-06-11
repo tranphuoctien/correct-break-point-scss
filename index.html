@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Corrent - CSS breakpoints</title>
+<style>
+      p {
+  padding: 10px;
+  background: #aaa;
+  color: white;
+}
+
+.phone-up {
+  background: purple;
+}
+
+@media (max-width: 599px) {
+  .phone-only {
+    background: purple;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .tablet-portait-only {
+    background: purple;
+  }
+}
+
+@media (min-width: 600px) {
+  .tablet-portrait-up {
+    background: purple;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .tablet-landscape-only {
+    background: purple;
+  }
+}
+
+@media (min-width: 900px) {
+  .tablet-landscape-up {
+    background: purple;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .desktop-only {
+    background: purple;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desktop-up {
+    background: purple;
+  }
+}
+
+@media (min-width: 1800px) {
+  .big-desktop-up {
+    background: purple;
+  }
+}
+
+    </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<p class="phone-up">Phone up</p>
+<p class="phone-only">Phone only</p>
+<p class="tablet-portait-only">Tablet portrait only</p>
+<p class="tablet-portrait-up">Tablet portrait up</p>
+<p class="tablet-landscape-only">Tablet landscape only</p>
+<p class="tablet-landscape-up">Tablet landscape up</p>
+<p class="desktop-only">Desktop only</p>
+<p class="desktop-up">Desktop up</p>
+<p class="big-desktop-up">Big desktop up</p>
+</body>
+</html>
